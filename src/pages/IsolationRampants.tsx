@@ -8,10 +8,7 @@ import { Helmet } from 'react-helmet-async';
 const IsolationRampants = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet>
-        <title>Isolation des Rampants | Cameleon Renov</title>
-        <meta name="description" content="Solutions d'isolation des rampants pour votre confort et vos économies d'énergie" />
-      </Helmet>
+
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
@@ -28,11 +25,11 @@ const IsolationRampants = () => {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>Qu'est-ce que l'isolation des rampants ?</CardTitle>
+                <CardTitle>Qu’est-ce que c’est ?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  L'isolation des rampants concerne l'isolation de la toiture en pente de votre habitation. Cette solution est indispensable pour améliorer la performance énergétique de votre maison, car le toit est responsable de 25 à 30% des déperditions de chaleur.
+                  Les rampants désignent les pans inclinés de la toiture, au-dessus des espaces de vie dans des combles aménageables. Leur isolation est fondamentale pour maintenir la chaleur en hiver et limiter la surchauffe sous toit en été.
                 </p>
               </CardContent>
             </Card>
@@ -42,13 +39,17 @@ const IsolationRampants = () => {
                 <CardTitle>Les avantages de notre solution</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Réduction significative des déperditions thermiques</li>
-                  <li>Amélioration du confort été comme hiver</li>
-                  <li>Économies sur vos factures énergétiques</li>
-                  <li>Matériaux écologiques et durables</li>
-                  <li>Intervention rapide et propre par nos équipes qualifiées</li>
-                  <li>Éligible aux aides financières de l'État</li>
+                <ul className="list-disc text-left pl-5 space-y-2 text-gray-700">
+                  <li>
+
+                    <b>Confort toute l’année:</b> Température agréable, réduction des courants d’air et meilleure protection contre la chaleur estivale.
+                  </li>
+                  <li>
+                    <b>Économies d’énergie:</b>  Diminution des déperditions de chaleur, donc baisse des dépenses de chauffage.
+
+                  </li>
+                  <li><b>Valorisation du logement:</b> Des combles aménagés et bien isolés ajoutent de la surface habitable et accroissent la valeur du bien.</li>
+
                 </ul>
               </CardContent>
             </Card>
@@ -58,14 +59,19 @@ const IsolationRampants = () => {
                 <CardTitle>Notre processus d'intervention</CardTitle>
               </CardHeader>
               <CardContent>
-                <ol className="list-decimal pl-5 space-y-2 text-gray-700">
-                  <li>Visite technique et évaluation de vos besoins</li>
-                  <li>Proposition d'une solution adaptée à votre habitation</li>
-                  <li>Devis détaillé et transparent</li>
-                  <li>Planification de l'intervention</li>
-                  <li>Réalisation des travaux par nos équipes certifiées RGE</li>
-                  <li>Contrôle qualité et nettoyage du chantier</li>
-                  <li>Service après-vente et garantie décennale</li>
+                <ol className="list-decimal text-left pl-5 space-y-2 text-gray-700">
+                  <li><b>Analyse de la charpente:</b> Vérifier l’état général, la ventilation du toit et la présence éventuelle de points de faiblesse (fuites, moisissures).</li>
+                  <li><b>Pose de l’isolant:</b>
+
+                    <ol>
+                      <li><i>Entre chevrons:</i> Première couche insérée entre les chevrons.
+
+                      </li>
+                      <li><i>Sous chevrons:</i> Deuxième couche en sous-face (double couche croisée).</li>
+                    </ol>
+                  </li>
+                  <li><b>Étanchéité et finitions:</b> Mise en place d’un pare- ou frein-vapeur (ou d’une lame d’air) pour gérer l’humidité, puis pose d’un revêtement intérieur (plaques de plâtre, lambris, etc.).</li>
+                   
                 </ol>
               </CardContent>
             </Card>

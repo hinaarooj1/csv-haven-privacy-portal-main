@@ -8,14 +8,11 @@ import { Helmet } from 'react-helmet-async';
 const IsolationExterieure = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet>
-        <title>Isolation Extérieure | Cameleon Renov</title>
-        <meta name="description" content="Solutions d'isolation thermique par l'extérieur pour votre confort et vos économies d'énergie" />
-      </Helmet>
+      
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Isolation Thermique par l'Extérieur</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Isolation Extérieure (ITE)</h1>
 
           <div className="relative rounded-lg overflow-hidden mb-8 h-64 md:h-80">
             <img
@@ -28,49 +25,40 @@ const IsolationExterieure = () => {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>L'isolation thermique par l'extérieur (ITE)</CardTitle>
+                <CardTitle>Qu’est-ce que c’est ?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  L'isolation thermique par l'extérieur consiste à envelopper votre maison d'une couche isolante depuis l'extérieur. Cette technique permet de traiter efficacement les ponts thermiques et d'améliorer considérablement la performance énergétique de votre habitation sans réduire la surface habitable.
-                </p>
+                L’Isolation Thermique par l’Extérieur (ITE) consiste à envelopper la façade d’un bâtiment avec un matériau isolant, ensuite recouvert d’un enduit ou d’un bardage. Cette technique est particulièrement performante pour limiter les ponts thermiques et moderniser l’apparence extérieure.  </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Les bénéfices de l'isolation extérieure</CardTitle>
+                <CardTitle>Avantages</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Excellente performance thermique en toutes saisons</li>
-                  <li>Protection efficace contre les intempéries</li>
-                  <li>Conservation de l'espace intérieur</li>
-                  <li>Rénovation esthétique de la façade</li>
-                  <li>Travaux réalisés sans perturber votre quotidien</li>
-                  <li>Réduction notable des factures de chauffage et climatisation</li>
-                  <li>Amélioration du confort acoustique</li>
-                  <li>Valorisation de votre patrimoine immobilier</li>
+                <ul className="list-disc pl-5  text-left space-y-2 text-gray-700">
+                  <li><b>Haute performance thermique: </b> L’isolant recouvre l’ensemble du bâti, réduisant les pertes aux jonctions plancher-mur, pignons, angles, etc.</li>
+                  <li><b>	Préservation de l’intérieur: </b> Aucun empiètement sur la surface habitable, ce qui est un atout dans les espaces restreints.</li>
+                <li><b>Rénovation de façade:</b> Possibilité de donner un style contemporain ou de rénover l’existant sans toucher à la décoration intérieure.</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Notre expertise en isolation extérieure</CardTitle>
+                <CardTitle>Mise en Œuvre</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4">
-                  Chez Cameleon Renov, nous maîtrisons parfaitement les différentes techniques d'isolation par l'extérieur :
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li><strong>Système ITE sous enduit :</strong> isolants fixés au mur et recouverts d'un enduit de finition</li>
-                  <li><strong>Bardage ventilé :</strong> isolation avec lame d'air et finition en bardage bois, composite, etc.</li>
-                  <li><strong>Vêture et vêtage :</strong> panneaux isolants préfabriqués avec parement intégré</li>
+                
+                <ul className="list-disc pl-5 text-left  space-y-2 text-gray-700">
+                  <li><b>Préparation du support:</b> Nettoyage et réparation des murs, vérification de la stabilité du support.</li>
+                  <li><b>Pose de l’isolant:</b> Panneaux rigides ou semi-rigides (polystyrène, laine de roche, fibre de bois, etc.) fixés par chevillage ou collage.</li>
+                  <li><b>Finitions extérieures:</b> Application d’un enduit (minéral, hydraulique, organique) ou installation d’un bardage (bois, métal, composite).</li>
+                  <li><b>Traitement des points singuliers:</b> Encadrements de fenêtres, débords de toits, soubassements, et autres zones délicates pour assurer une parfaite étanchéité.</li>
                 </ul>
-                <p className="text-gray-700 mt-4">
-                  Nos équipes certifiées RGE vous conseillent sur la solution la plus adaptée à votre habitation et à votre budget.
-                </p>
+                
               </CardContent>
             </Card>
           </div>

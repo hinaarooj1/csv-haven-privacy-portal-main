@@ -44,7 +44,7 @@ const formSchema = z.object({
   address: z.string().min(5, "Adresse invalide"),
   projectType: z.string({
     required_error: "Veuillez sélectionner un type de projet",
-  }),
+  }).min(1, "Veuillez sélectionner un type de projet"),
   message: z.string().optional(),
 });
 
@@ -56,12 +56,12 @@ interface QuoteRequestFormProps {
 
 // Correct EmailJS configuration
 const EMAILJS_SERVICE_ID = "service_udo3a7q";
-const EMAILJS_TEMPLATE_ID = "template_9txr8vt";  // Fix the template ID (was template_6wntvrtb)
+const EMAILJS_TEMPLATE_ID = "template_u4egfp8";  // Fix the template ID (was template_6wntvrtb)
 const EMAILJS_USER_ID = "w_yfoShgtLWriIvB9";
 
 // Use same IDs for fallback for debugging
 const EMAILJS_FALLBACK_SERVICE_ID = "service_udo3a7q";
-const EMAILJS_FALLBACK_TEMPLATE_ID = "template_9txr8vt";
+const EMAILJS_FALLBACK_TEMPLATE_ID = "template_u4egfp8";
 
 const QuoteRequestForm = ({ triggerButton }: QuoteRequestFormProps) => {
   const { toast } = useToast();
@@ -116,7 +116,7 @@ const QuoteRequestForm = ({ triggerButton }: QuoteRequestFormProps) => {
       }
     }
   }
-
+ 
   async function onSubmit(data: FormValues) {
     setIsSubmitting(true);
     
@@ -124,11 +124,12 @@ const QuoteRequestForm = ({ triggerButton }: QuoteRequestFormProps) => {
       from_name: data.name,
       from_email: data.email,
       from_phone: data.phone,
-      address: data.address,
+      from_address: data.address,
       project_type: data.projectType,
       message: data.message || "Aucun message supplémentaire",
       to_name: "Cameleon Renov",
     };
+    console.log('templateParams: ', templateParams);
     
     console.log("Demande de devis envoyée:", templateParams);
     
@@ -271,11 +272,11 @@ const QuoteRequestForm = ({ triggerButton }: QuoteRequestFormProps) => {
                     </FormControl>
                     <SelectContent>
                       <SelectGroup>
-                        <SelectItem value="rampants">Isolation des rampants</SelectItem>
-                        <SelectItem value="combles">Isolation des combles</SelectItem>
-                        <SelectItem value="murs">Isolation des murs</SelectItem>
-                        <SelectItem value="sol">Isolation du sol</SelectItem>
-                        <SelectItem value="autre">Autre projet</SelectItem>
+                        <SelectItem value="Isolation des rampants">Isolation des rampants</SelectItem>
+                        <SelectItem value="Isolation des combles">Isolation des combles</SelectItem>
+                        <SelectItem value="Isolation des murs">Isolation des murs</SelectItem>
+                        <SelectItem value="Isolation du sol">Isolation du sol</SelectItem>
+                        <SelectItem value="Autre projet">Autre projet</SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>

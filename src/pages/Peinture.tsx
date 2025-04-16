@@ -8,71 +8,62 @@ import { Helmet } from 'react-helmet-async';
 const Peinture = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet>
-        <title>Services de Peinture | Cameleon Renov</title>
-        <meta name="description" content="Services de peinture intérieure et extérieure professionnels pour embellir votre habitation" />
-      </Helmet>
+
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Services de Peinture</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">Services de Peinturee</h1>
 
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>Nos services de peinture professionnels</CardTitle>
+                <CardTitle>Qu’est-ce que c’est ?</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Chez Cameleon Renov, nous proposons des services de peinture de haute qualité pour l'intérieur et l'extérieur de votre habitation. Notre équipe de peintres expérimentés s'engage à transformer vos espaces avec précision, propreté et dans le respect des délais.
-                </p>
+                  Les travaux de peinture recouvrent autant l’aspect décoratif que l’aspect technique, grâce à l’essor de peintures dites « thermo-réfléchissantes ». Ces dernières peuvent apporter un complément d’isolation ou limiter la surchauffe estivale, notamment sur les toits ou les façades exposées au soleil. </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Peinture intérieure</CardTitle>
+                <CardTitle>Avantages</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4">
-                  Nos services de peinture intérieure comprennent :
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Peinture des murs et plafonds</li>
-                  <li>Techniques décoratives (enduits décoratifs, effets matière)</li>
-                  <li>Peinture des boiseries et radiateurs</li>
-                  <li>Pose de revêtements muraux (papier peint, toile de verre)</li>
-                  <li>Conseils en décoration et choix des couleurs</li>
+
+                <ul className="list-disc text-left pl-5 space-y-2 text-gray-700">
+                  <li><b>Esthétisme:</b> Renouveler l’aspect intérieur ou extérieur sans entreprendre de gros travaux.</li>
+                  <li><b>Complément à l’isolation:</b> Certains revêtements réfléchissent les rayons solaires, contribuant à réduire légèrement la température en été.</li>
+                  <li><b>Entretien et protection:</b> Prolonge la durée de vie des supports, limite les fissures et l’usure de la façade.</li>
+
                 </ul>
-                <p className="text-gray-700 mt-4">
-                  Nous utilisons des peintures de qualité professionnelle, respectueuses de l'environnement et à faible teneur en COV pour préserver la qualité de l'air dans votre intérieur.
-                </p>
+
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Peinture extérieure</CardTitle>
+                <CardTitle>Mise en Œuvre</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 mb-4">
-                  Pour l'extérieur de votre habitation, nous proposons :
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Ravalement de façade</li>
-                  <li>Peinture de façade</li>
-                  <li>Traitement et peinture des boiseries extérieures</li>
-                  <li>Peinture des ferronneries</li>
-                  <li>Imperméabilisation des murs</li>
-                  <li>Traitement anti-mousse et anti-humidité</li>
+
+                <ul className="list-disc pl-5 space-y-2 text-left text-gray-700">
+                  <li><b>Préparation du support:</b> Nettoyage, décapage éventuel, rebouchage des fissures, application d’une sous-couche.</li>
+                  <li><b>Choix de la peinture:</b>
+                    <ol>
+                      <li>Peintures acryliques, glycéros ou minérales pour un usage classique
+                      </li>
+                      <li>Peintures « thermo-réfléchissantes » pour optimiser le confort d’été</li>
+                    </ol>
+                  </li>
+                  <li><b>Application:</b> Respect des conditions d’application (température, hygrométrie) et du nombre de couches recommandé.</li>
+                
                 </ul>
-                <p className="text-gray-700 mt-4">
-                  Nos peintures extérieures sont sélectionnées pour leur résistance aux intempéries, aux UV et aux variations de température, garantissant ainsi une durabilité optimale de vos travaux.
-                </p>
+               
               </CardContent>
             </Card>
 
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>Notre engagement qualité</CardTitle>
               </CardHeader>
@@ -87,7 +78,7 @@ const Peinture = () => {
                   <li>Garantie sur nos travaux</li>
                 </ul>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </main>
